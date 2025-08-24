@@ -1,0 +1,389 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikunj's Byara - Lawn and Resort</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="preloader">
+        <div class="preloader-logo">Nikunj's Byara</div>
+    </div>
+
+    <header class="hero-section">
+        <nav class="navbar">
+            <div class="nav-links nav-left">
+                <a href="#about">About</a>
+                <a href="#rooms">Rooms & Suites</a>
+                <a href="#dining">Dining</a>
+            </div>
+            <div class="nav-logo">
+                <a href="#">Nikunj's Byara</a>
+            </div>
+            <div class="nav-links nav-right">
+                <a href="#activities">Experiences</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="hamburger" id="hamburger-menu" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+
+        <div class="mobile-nav" id="mobile-nav-overlay">
+            <button class="close-btn" id="close-menu-btn" aria-label="Close menu">&times;</button>
+            <a href="#about">About</a>
+            <a href="#rooms">Rooms & Suites</a>
+            <a href="#dining">Dining</a>
+            <a href="#activities">Experiences</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="hero-slideshow">
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3200');"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3200');"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1596436889106-be35e843f974?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3200');"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3200');"></div>
+        </div>
+
+        <div class="hero-content">
+            <h1 id="hero-headline">For every occasion of Life</h1>
+        </div>
+
+        <div class="booking-bar">
+            <form class="booking-form">
+                <div class="form-group">
+                    <label for="checkin">Check-in</label>
+                    <input type="date" id="checkin">
+                </div>
+                <div class="form-group">
+                    <label for="checkout">Check-out</label>
+                    <input type="date" id="checkout">
+                </div>
+                <div class="form-group">
+                    <label for="guests">Guests</label>
+                    <select id="guests">
+                        <option value="1">1</option>
+                        <option value="2" selected>2</option>
+                        <option value="3">3</option>
+                        <option value="4">4+</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="event-type">Event Type</label>
+                    <select id="event-type">
+                        <option value="vacation" selected>Vacation</option>
+                        <option value="wedding">Wedding</option>
+                        <option value="corporate">Corporate</option>
+                        <option value="celebration">Celebration</option>
+                    </select>
+                </div>
+                 <div class="form-group">
+                    <label for="rooms-select">Rooms</label>
+                    <select id="rooms-select">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3+</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-book-now">Book Now</button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="content-section">
+            <div class="about-container">
+                <div class="about-text" data-aos="fade-right">
+                    <h2 class="section-title">Your Perfect Venue</h2>
+                    <p class="section-subtitle">A Place for Every Celebration</p>
+                    <p>Nikunj's Byara is more than a destination; it's the perfect backdrop for life's most cherished moments. Nestled amidst lush, manicured lawns, our resort offers a seamless blend of modern luxury and natural beauty. We provide an elegant canvas for every event, from grand weddings to intimate gatherings and corporate retreats.</p>
+                    <p>Our commitment is to provide a versatile and beautiful space, complemented by warm, personal service that anticipates your every need. Every detail at Nikunj's Byara is crafted to create lasting memories. Discover a tranquil escape where elegance meets comfort.</p>
+                </div>
+                <div class="about-image-collage" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1615880129321-80a92b218f65?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800" alt="Indian Architecture Detail" class="collage-img-1">
+                    <img src="https://images.unsplash.com/photo-1593282298647-3d7a6364d96a?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800" alt="Resort Garden" class="collage-img-2">
+                </div>
+            </div>
+        </section>
+        <section id="rooms" class="content-section" data-aos="fade-up">
+            <h2 class="section-title">Our Rooms & Suites</h2>
+            <p class="section-subtitle">Comfort and Elegance for Your Stay</p>
+        
+            <div class="rooms-container">
+                <!-- Room Showcase 1 -->
+                <div class="room-showcase">
+                    <div class="room-image-grid">
+                        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200" alt="Spacious Maharaja Suite with elegant decor" class="room-img-bg">
+                        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800" alt="Detail of the suite's luxurious bed" class="room-img-fg">
+                    </div>
+                    <div class="room-details">
+                        <h3>The Maharaja Suite</h3>
+                        <p>Experience unparalleled opulence in our flagship suite. Featuring a private balcony with panoramic views, a four-poster king bed, and a lavish marble bathroom, the Maharaja Suite is the epitome of royal living.</p>
+                        <ul class="amenities-list">
+                            <li>Private Balcony</li>
+                            <li>Ocean View</li>
+                            <li>Jacuzzi Bathtub</li>
+                            <li>Personal Butler Service</li>
+                        </ul>
+                        <button class="btn-details" data-room="maharaja">View Details</button>
+                    </div>
+                </div>
+        
+                <!-- Room Showcase 2 -->
+                <div class="room-showcase">
+                    <div class="room-image-grid">
+                        <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200" alt="Serene Lakeview Villa exterior with private pool" class="room-img-bg">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800" alt="Cozy and modern interior of the villa" class="room-img-fg">
+                    </div>
+                    <div class="room-details">
+                        <h3>Lakeview Pool Villa</h3>
+                        <p>Escape to your private sanctuary. Our Lakeview Villas offer seclusion and tranquility, with a personal plunge pool, a lush garden patio, and direct access to the serene waters of the lake.</p>
+                         <ul class="amenities-list">
+                            <li>Private Plunge Pool</li>
+                            <li>Garden Patio</li>
+                            <li>Lake Access</li>
+                            <li>In-Villa Dining</li>
+                        </ul>
+                        <button class="btn-details" data-room="villa">View Details</button>
+                    </div>
+                </div>
+        
+                <!-- Room Showcase 3 -->
+                <div class="room-showcase">
+                    <div class="room-image-grid">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200" alt="Comfortable and stylish Deluxe King Room" class="room-img-bg">
+                        <img src="https://images.unsplash.com/photo-1598605272254-16f0c0ecdfa5?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800" alt="Modern bathroom with walk-in shower" class="room-img-fg">
+                    </div>
+                    <div class="room-details">
+                        <h3>Deluxe King Room</h3>
+                        <p>Elegantly appointed and designed for comfort, our Deluxe King Rooms provide a restful retreat. Enjoy modern amenities, a plush king-sized bed, and a spacious work area, all crafted with a touch of Indian artistry.</p>
+                         <ul class="amenities-list">
+                            <li>King-Sized Bed</li>
+                            <li>Rainfall Shower</li>
+                            <li>Work Desk</li>
+                            <li>24-Hour Room Service</li>
+                        </ul>
+                        <button class="btn-details" data-room="deluxe">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="dining" class="content-section" data-aos="fade-up">
+            <h2 class="section-title">Dining & Cuisine</h2>
+            <p class="section-subtitle">Flavors for Every Celebration</p>
+            <div class="dining-container">
+                <div class="dining-option">
+                    <div class="dining-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800" alt="Elegant restaurant interior with warm lighting">
+                    </div>
+                    <div class="dining-details">
+                        <h4>The Royal Plate</h4>
+                        <p class="cuisine-type">Indian Fine Dining</p>
+                        <p>Indulge in a regal feast where traditional recipes are reimagined with a contemporary twist. A symphony of flavors awaits.</p>
+                        <span class="opening-hours">Dinner: 6:00 PM - 11:00 PM</span>
+                        <button class="btn-details">Explore Menu</button>
+                    </div>
+                </div>
+                <div class="dining-option">
+                    <div class="dining-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800" alt="Modern and airy cafe with garden views">
+                    </div>
+                    <div class="dining-details">
+                        <h4>Spice Garden</h4>
+                        <p class="cuisine-type">All-Day Eatery</p>
+                        <p>Enjoy a casual yet vibrant atmosphere with a diverse menu of international and local favorites, crafted from the freshest ingredients.</p>
+                        <span class="opening-hours">Open: 7:00 AM - 10:00 PM</span>
+                         <button class="btn-details">Explore Menu</button>
+                    </div>
+                </div>
+                <div class="dining-option">
+                    <div class="dining-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800" alt="Sophisticated bar with an extensive collection of spirits">
+                    </div>
+                    <div class="dining-details">
+                        <h4>The Azure Lounge</h4>
+                        <p class="cuisine-type">Bar & Tapas</p>
+                        <p>Unwind with our signature cocktails and a selection of gourmet tapas in a chic, relaxed setting. The perfect end to any day.</p>
+                        <span class="opening-hours">Open: 4:00 PM - 1:00 AM</span>
+                         <button class="btn-details">Explore Menu</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="activities" class="content-section" data-aos="fade-up">
+            <h2 class="section-title">Activities & Experiences</h2>
+            <p class="section-subtitle">Experiences to Cherish</p>
+            <div class="activities-grid">
+                <div class="experience-card card-large">
+                    <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1506126613408-4e05860a58e8?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800');"></div>
+                    <div class="card-content">
+                        <h3>Yoga & Wellness Retreat</h3>
+                    </div>
+                </div>
+                <div class="experience-card">
+                    <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800');"></div>
+                    <div class="card-content">
+                        <h3>Gourmet Cooking Class</h3>
+                    </div>
+                </div>
+                 <div class="experience-card">
+                    <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800');"></div>
+                    <div class="card-content">
+                        <h3>Nature Trail Hiking</h3>
+                    </div>
+                </div>
+                <div class="experience-card card-wide">
+                     <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1510293375345-d6c4891823a3?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200');"></div>
+                    <div class="card-content">
+                        <h3>Private Beach Dinner</h3>
+                    </div>
+                </div>
+                 <div class="experience-card">
+                     <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1528114999338-78a9c3132e18?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800');"></div>
+                    <div class="card-content">
+                        <h3>Local Village Tour</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="gallery" class="content-section" data-aos="fade-up">
+            <h2 class="section-title">Gallery</h2>
+            <p class="section-subtitle">Explore the Beauty of Nikunj's Byara</p>
+            <div class="gallery-grid">
+                <a href="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600" class="gallery-item item-tall">
+                    <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="View of the resort pool and lounge area at dusk">
+                </a>
+                <a href="https://images.unsplash.com/photo-1568495248636-6432b97bd949?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600" class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1568495248636-6432b97bd949?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="A luxurious hotel room with elegant furnishings">
+                </a>
+                <a href="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600" class="gallery-item item-wide">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="A fine dining restaurant setup with wine glasses">
+                </a>
+                <a href="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600" class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="A relaxing spa setting with towels and flowers">
+                </a>
+                <a href="https://images.unsplash.com/photo-1542728932-6a5b51c110f2?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600" class="gallery-item item-wide">
+                    <img src="https://images.unsplash.com/photo-1542728932-6a5b51c110f2?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Detail of intricate Indian architecture">
+                </a>
+                <a href="https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600" class="gallery-item item-tall">
+                    <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="The grand and opulent hotel lobby">
+                </a>
+                 <a href="https://images.unsplash.com/photo-1535827841776-24e39e51322c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600" class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1535827841776-24e39e51322c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Another view of the resort pool area">
+                </a>
+                 <a href="https://images.unsplash.com/photo-1521783590515-5870a41d701a?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600" class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1521783590515-5870a41d701a?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="A plate of gourmet food from the resort's restaurant">
+                </a>
+            </div>
+        </section>
+        <section id="contact" class="content-section" data-aos="fade-up">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">Get in touch to plan your perfect event.</p>
+            <div class="contact-container">
+                <div class="contact-form-wrapper">
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                     <div class="contact-info">
+                        <div class="info-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <span>123 Royal Path, Jaipur, Rajasthan, India</span>
+                        </div>
+                        <div class="info-item">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <span>+91 123 456 7890</span>
+                        </div>
+                        <div class="info-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <span>reservations@nikunjsbyara.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-placeholder">
+                    <img src="https://images.unsplash.com/photo-1594398931146-2436a95e4e6c?q=80&w=2400&auto=format&fit=crop" alt="Map to Nikunj's Byara">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column about">
+                <h3 class="footer-logo">Nikunj's Byara</h3>
+                <p>An elegant venue for every occasion of life. Discover an immersive experience where lush nature meets modern luxury.</p>
+            </div>
+            <div class="footer-column links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#rooms">Rooms & Suites</a></li>
+                    <li><a href="#dining">Dining</a></li>
+                    <li><a href="#activities">Experiences</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-column subscribe">
+                <h4>Stay Updated</h4>
+                <p>Subscribe to our newsletter for exclusive offers and news.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">Fb</a>
+                    <a href="#" aria-label="Instagram">In</a>
+                    <a href="#" aria-label="Twitter">Tw</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year">2024</span> Nikunj's Byara. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Room Details Modal -->
+    <div id="room-modal-overlay" class="modal-overlay">
+        <div class="modal-content">
+             <button id="modal-close-btn" class="modal-close-btn" aria-label="Close details">&times;</button>
+             <div class="modal-grid">
+                 <div id="modal-image-gallery" class="modal-image-gallery">
+                     <!-- Images will be injected here -->
+                 </div>
+                 <div id="modal-details" class="modal-details">
+                     <!-- Details will be injected here -->
+                 </div>
+             </div>
+        </div>
+    </div>
+
+    <!-- Gallery Lightbox -->
+    <div id="gallery-lightbox" class="gallery-lightbox">
+        <button class="lightbox-nav prev" aria-label="Previous image">&#10094;</button>
+        <button class="lightbox-nav next" aria-label="Next image">&#10095;</button>
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close image viewer">&times;</button>
+            <img src="" alt="Enlarged gallery view">
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="module" src="index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
